@@ -1,0 +1,96 @@
+{
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "title": "firstName",
+      "pattern": "[a-z]*",
+      "minLength": 1,
+      "maxLength": 10
+    },
+    "lastName": {
+      "type": "string",
+      "title": "lastName"
+    },
+    "language": {
+      "type": "string",
+      "title": "Language",
+      "widget": {
+        "id": "select"
+      },
+      "oneOf": [
+        {
+          "enum": [
+            "es"
+          ],
+          "description": "Spanish"
+        },
+        {
+          "enum": [
+            "fr"
+          ],
+          "description": "French"
+        }
+      ]
+    },
+    "hobby": {
+      "type": "string",
+      "title": "hobby",
+      "widget": {
+        "id": "array"
+      },
+      "oneOf": [
+        {
+          "enum": [
+            "1"
+          ],
+          "description": "111"
+        },
+        {
+          "enum": [
+            "2"
+          ],
+          "description": "222"
+        },
+        {
+          "enum": [
+            "3"
+          ],
+          "description": "333"
+        },
+        {
+          "enum": [
+            "4"
+          ],
+          "description": "444"
+        }
+      ]
+    },
+    "gender": {
+      "type": "string",
+      "title": "gender",
+      "widget": {
+        "id": "radio"
+      },
+      "oneOf": [
+        {
+          "enum": [
+            ""
+          ],
+          "description": "Please Select"
+        },
+        {
+          "enum": [
+            "m"
+          ],
+          "description": "Mail"
+        },
+        {
+          "enum": [
+            "w"
+          ],
+          "description": "Femail"
+        }
+      ]
+    }
+  }
+}

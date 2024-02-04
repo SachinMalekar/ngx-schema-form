@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ngx-schema-form-example:build:production"
+              "buildTarget": "ngx-schema-form-example:build:production"
             },
             "development": {
-              "browserTarget": "ngx-schema-form-example:build:development"
+              "buildTarget": "ngx-schema-form-example:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-schema-form-example:build"
+            "buildTarget": "ngx-schema-form-example:build"
           }
         },
         "test": {
