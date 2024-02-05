@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import schema_json from './schema-form.json'
+import { ISchema } from 'ngx-schema-form';
 
 @Component({
   selector: 'app-my-form',
@@ -7,11 +8,18 @@ import schema_json from './schema-form.json'
   styleUrl: './my-form.component.css'
 })
 export class MyFormComponent implements OnInit{
-
-  schemaObject = schema_json
+model: any;
+layout: any;
+schema: ISchema = { properties: {}};
   currentModel : object = {};
   constructor() { }
   ngOnInit() {
+    this.setupSchema();
+  }
+  async setupSchema() {
+    this.schema = schema_json as ISchema;
+    console.log("this.schema", this.schema);
+    this.model = {};
     
   }
 }

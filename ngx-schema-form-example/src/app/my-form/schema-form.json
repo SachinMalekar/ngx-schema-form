@@ -82,13 +82,13 @@
           "enum": [
             "m"
           ],
-          "description": "Mail"
+          "description": "Male"
         },
         {
           "enum": [
             "w"
           ],
-          "description": "Femail"
+          "description": "Female"
         }
       ]
     }
